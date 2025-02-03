@@ -81,6 +81,7 @@ body {
 }
 
 .header-link {
+  position: relative;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -91,7 +92,7 @@ body {
   color: #404bbf;
 }
 
-.header-link:active::after {
+.header-link:focus::after {
   content: "";
   position: absolute;
   bottom: -24px;
