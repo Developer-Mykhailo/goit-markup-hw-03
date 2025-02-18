@@ -36,8 +36,6 @@ body {
 /* header */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -52,10 +50,17 @@ body {
 
 .header-list {
   width: 261px;
+  gap: 40px;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 24px 0;
 }
 
 .address-list {
   width: 344px;
+  gap: 40px;
 }
 
 .logo {
@@ -122,6 +127,7 @@ body {
 
 .hero-btn {
   display: block;
+  min-width: 169px;
   margin: 0 auto;
   padding: 16px 32px;
   background: #4d5ae5;
@@ -142,8 +148,14 @@ body {
 
 /* features */
 
-.hidden {
-  display: none;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .features-list {
@@ -195,12 +207,11 @@ body {
 .team-item {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
-  padding-bottom: 32px;
   border-radius: 0 0 4px 4px;
 }
 
-.member-photo {
-  margin-bottom: 32px;
+.team-member-box {
+  padding: 32px 0;
 }
 
 .team-member-name {
@@ -256,16 +267,14 @@ body {
   background-color: #2e2f42;
 }
 
-.footer-content {
-  max-width: 264px;
-}
-
 .footer .logo-accent {
   color: #f4f4fd;
   display: inline-block;
   margin-bottom: 8px;
 }
+
 .footer-descr {
+  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
